@@ -360,7 +360,7 @@ if plotResults
         yyaxis left
         plot(xPV, fval, 'p', 'MarkerSize', 12, 'LineWidth', 1.4);
         text(xPV, fval, '  optimum', 'VerticalAlignment', 'bottom');
-        legend('Total mass','Required battery capacity','Optimum', 'Location', 'best');
+        legend('Total mass','Optimum','Required battery capacity', 'Location', 'best');
     end
 
     if runHeuristicCompare && ~isempty(heuristicTable)
